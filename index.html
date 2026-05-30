@@ -1,11 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apunte de Estudio: Software, Ofimática y Sistemas Operativos (Windows)</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
@@ -28,6 +32,7 @@
             color: #4f46e5;
             font-weight: 600;
         }
+        /* Estilos de transición suave para los acordeones */
         .accordion-content {
             transition: max-height 0.3s ease-out, padding 0.3s ease;
         }
@@ -35,36 +40,38 @@
 </head>
 <body class="text-slate-800 antialiased">
 
+    <!-- Hero / Encabezado -->
     <header class="gradient-bg text-white py-16 px-6 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="inline-flex items-center space-x-2 bg-indigo-900/50 border border-indigo-500/30 px-3 py-1.5 rounded-full text-indigo-300 text-sm font-semibold mb-6">
                 <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                <span>Escuela de Oficiales de Policía Don José de San Martín - Villa María</span>
+                <span>Material de Estudio Oficial</span>
             </div>
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
                 Software, Ofimática y <br class="hidden md:block">
                 Sistemas Operativos <span class="text-cyan-400">(Windows)</span>
             </h1>
-            <p class="text-slate-300 text-lg md:text-xl max-w-3xl mb-4 font-light">
-                Recurso de apoyo para la asignatura Tecnologías de la Información y la Comunicación. Diseñado para repasar los fundamentos de la informática, analizar suites de oficina y aprender a usar la computadora de forma eficiente.
-            </p>
+            <p class="text-slate-300 text-lg md:text-xl max-w-3xl mb-8 font-light">
+Recurso de apoyo para TICs. Diseñado para repasar los fundamentos de la informática, analizar suites de oficina y aprender a usar la computadora de forma eficiente.            </p>
+            
+                   </div>
+                </div>
+            </div>
         </div>
     </header>
 
+    <!-- Barra de Navegación por Bloques -->
     <nav class="sticky top-0 bg-white border-b border-slate-200 shadow-sm z-50 overflow-x-auto">
         <div class="max-w-6xl mx-auto px-4 flex space-x-8 whitespace-nowrap">
-            <button onclick="switchTab('bloque0')" id="btn-bloque0" class="tab-btn py-4 text-sm font-medium border-b-2 border-transparent hover:text-indigo-600 transition-colors tab-active">
-                Bloque 0: Objetivos
-            </button>
-            <button onclick="switchTab('bloque1')" id="btn-bloque1" class="tab-btn py-4 text-sm font-medium border-b-2 border-transparent hover:text-indigo-600 transition-colors">
+            <button onclick="switchTab('bloque1')" id="btn-bloque1" class="tab-btn py-4 text-sm font-medium border-b-2 border-transparent hover:text-indigo-600 transition-colors tab-active">
                 Bloque 1: Software
             </button>
             <button onclick="switchTab('bloque2')" id="btn-bloque2" class="tab-btn py-4 text-sm font-medium border-b-2 border-transparent hover:text-indigo-600 transition-colors">
                 Bloque 2: Ofimática
             </button>
             <button onclick="switchTab('bloque3')" id="btn-bloque3" class="tab-btn py-4 text-sm font-medium border-b-2 border-transparent hover:text-indigo-600 transition-colors">
-                Bloque 3: Sistemas Operativos
+                Bloque 3: S.O.
             </button>
             <button onclick="switchTab('bloque4')" id="btn-bloque4" class="tab-btn py-4 text-sm font-medium border-b-2 border-transparent hover:text-indigo-600 transition-colors">
                 Bloque 4: Windows
@@ -78,50 +85,17 @@
         </div>
     </nav>
 
+    <!-- Contenido Principal -->
     <main class="max-w-6xl mx-auto px-4 py-8">
         
-        <section id="bloque0" class="tab-content block">
-            <div class="mb-8">
-                <h2 class="text-3xl font-bold text-slate-900 mb-2">Bloque 0: Objetivos de Aprendizaje</h2>
-                <div class="h-1 w-20 bg-indigo-600 rounded"></div>
-            </div>
-
-            <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
-                <h3 class="text-xl font-semibold mb-4 text-indigo-950 flex items-center gap-2">
-                    <i class="fa-solid fa-bullseye text-indigo-600"></i> Metas de la Unidad
-                </h3>
-                <p class="text-sm text-slate-600 mb-6 font-medium">Al terminar de leer este apunte, serás capaz de:</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-700">
-                    <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">1</span>
-                        <p class="mt-0.5">Diferenciar con precisión el hardware del software.</p>
-                    </div>
-                    <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">2</span>
-                        <p class="mt-0.5">Clasificar cualquier programa en uno de los cuatro tipos principales.</p>
-                    </div>
-                    <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">3</span>
-                        <p class="mt-0.5">Conocer las diferencias clave entre Microsoft 365, Google Workspace y LibreOffice.</p>
-                    </div>
-                    <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">4</span>
-                        <p class="mt-0.5">Explicar qué hace un Sistema Operativo por una computadora.</p>
-                    </div>
-                    <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-100 md:col-span-2">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">5</span>
-                        <p class="mt-0.5">Reconocer y utilizar de manera eficiente los elementos visuales y atajos de teclado de Windows.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="bloque1" class="tab-content hidden">
+        <!-- BLOQUE 1: INTRODUCCIÓN AL SOFTWARE -->
+        <section id="bloque1" class="tab-content block">
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-2">Bloque 1: Introducción al Software e Ingeniería de Sistemas</h2>
                 <div class="h-1 w-20 bg-indigo-600 rounded"></div>
             </div>
 
+            <!-- Concepto Clave: Hardware vs Software -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 mb-12 shadow-sm">
                 <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                     <span class="text-indigo-600"><i class="fa-solid fa-exchange"></i></span> Concepto Clave: Hardware vs. Software
@@ -148,6 +122,7 @@
                 </div>
             </div>
 
+            <!-- El Ciclo de Vida del Software (Acordeón) -->
             <div class="bg-indigo-950 text-white rounded-3xl p-6 md:p-8 mb-12 shadow-xl relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl"></div>
                 <h3 class="text-2xl font-bold mb-3 flex items-center gap-2">
@@ -157,7 +132,9 @@
                     En la ingeniería de software, los programas no se crean al azar; se sigue un proceso estructurado dividido en etapas ordenadas. Haz clic en cada una para desplegar los detalles:
                 </p>
 
+                <!-- Contenedor del Acordeón -->
                 <div class="space-y-3 max-w-4xl text-slate-900">
+                    <!-- Item 1 -->
                     <div class="bg-white/95 rounded-xl overflow-hidden shadow">
                         <button onclick="toggleAccordion('ciclo1')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span>01. Análisis de Requisitos</span>
@@ -172,6 +149,7 @@
                         </div>
                     </div>
 
+                    <!-- Item 2 -->
                     <div class="bg-white/95 rounded-xl overflow-hidden shadow">
                         <button onclick="toggleAccordion('ciclo2')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span>02. Diseño</span>
@@ -182,6 +160,7 @@
                         </div>
                     </div>
 
+                    <!-- Item 3 -->
                     <div class="bg-white/95 rounded-xl overflow-hidden shadow">
                         <button onclick="toggleAccordion('ciclo3')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span>03. Codificación</span>
@@ -192,6 +171,7 @@
                         </div>
                     </div>
 
+                    <!-- Item 4 -->
                     <div class="bg-white/95 rounded-xl overflow-hidden shadow">
                         <button onclick="toggleAccordion('ciclo4')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span>04. Pruebas (Testeo)</span>
@@ -202,6 +182,7 @@
                         </div>
                     </div>
 
+                    <!-- Item 5 -->
                     <div class="bg-white/95 rounded-xl overflow-hidden shadow">
                         <button onclick="toggleAccordion('ciclo5')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span>05. Instalación / Paso a Producción</span>
@@ -212,6 +193,7 @@
                         </div>
                     </div>
 
+                    <!-- Item 6 -->
                     <div class="bg-white/95 rounded-xl overflow-hidden shadow">
                         <button onclick="toggleAccordion('ciclo6')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span>06. Mantenimiento</span>
@@ -223,6 +205,7 @@
                     </div>
                 </div>
 
+                <!-- Tip de Estudio -->
                 <div class="mt-8 bg-indigo-900/40 border border-indigo-500/30 rounded-2xl p-5 flex items-start gap-4">
                     <div class="text-yellow-400 text-xl"><i class="fa-solid fa-lightbulb"></i></div>
                     <div>
@@ -234,6 +217,7 @@
                 </div>
             </div>
 
+            <!-- Taxonomía: Los cuatro tipos de Software -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
                 <h3 class="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <i class="fa-solid fa-folder-tree text-indigo-600"></i> Taxonomía: Los cuatro tipos de Software
@@ -242,6 +226,7 @@
                     Los programas se clasifican según su propósito técnico. Para conocer más sobre cómo se clasifican estos programas, puedes consultar la <a href="https://www.ceupe.com/blog/que-es-el-software-y-como-se-clasifica.html" target="_blank" class="text-indigo-600 hover:underline font-semibold">guía de tipos de software de Ceupe</a> o revisar ejemplos prácticos en la web de <a href="https://www.godaddy.com/resources/latam/desarrollo/ejemplos-software-aplicaciones-herramientas" target="_blank" class="text-indigo-600 hover:underline font-semibold">GoDaddy</a>.
                 </p>
 
+                <!-- Tabla de clasificación -->
                 <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm mb-6">
                     <table class="min-w-full divide-y divide-slate-200 text-sm">
                         <thead class="bg-slate-50">
@@ -276,6 +261,7 @@
                     </table>
                 </div>
 
+                <!-- Alerta de examen -->
                 <div class="bg-red-50 border border-red-200 rounded-2xl p-5 flex items-start gap-4">
                     <div class="text-red-500 text-xl"><i class="fa-solid fa-circle-exclamation"></i></div>
                     <div>
@@ -288,12 +274,14 @@
             </div>
         </section>
 
+        <!-- BLOQUE 2: OFIMÁTICA Y SUITES OFIMÁTICAS -->
         <section id="bloque2" class="tab-content hidden">
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-2">Bloque 2: Ofimática y Suites Ofimáticas Existentes</h2>
                 <div class="h-1 w-20 bg-indigo-600 rounded"></div>
             </div>
 
+            <!-- Definición de Ofimática -->
             <div class="bg-gradient-to-r from-indigo-50 to-cyan-50 border border-slate-200 rounded-3xl p-8 mb-12 flex flex-col md:flex-row items-center gap-6">
                 <div class="bg-indigo-600 text-white p-5 rounded-2xl text-3xl">
                     <i class="fa-solid fa-laptop-file"></i>
@@ -306,6 +294,7 @@
                 </div>
             </div>
 
+            <!-- Representación de Suites Ofimáticas -->
             <div class="bg-slate-900 text-white p-8 rounded-3xl mb-12 text-center">
                 <h4 class="text-lg font-bold mb-6 text-cyan-400">ESQUEMA GENERAL: SUITES OFIMÁTICAS</h4>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-slate-800">
@@ -327,9 +316,11 @@
                 </div>
             </div>
 
+            <!-- Comparativa Detallada de las 3 grandes suites -->
             <div class="space-y-8">
                 <h3 class="text-2xl font-bold text-slate-900 mb-6">Comparativa: Las 3 Grandes Suites de Oficina</h3>
 
+                <!-- Microsoft 365 -->
                 <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
                         <h4 class="text-xl font-bold text-indigo-950">1. Microsoft 365 (Word, Excel, PowerPoint)</h4>
@@ -350,6 +341,7 @@
                     </div>
                 </div>
 
+                <!-- Google Workspace -->
                 <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
                         <h4 class="text-xl font-bold text-indigo-950">2. Google Workspace (Google Docs, Sheets, Slides)</h4>
@@ -370,6 +362,7 @@
                     </div>
                 </div>
 
+                <!-- LibreOffice -->
                 <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm">
                     <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
                         <h4 class="text-xl font-bold text-indigo-950">3. LibreOffice (Writer, Calc, Impress)</h4>
@@ -392,12 +385,14 @@
             </div>
         </section>
 
+        <!-- BLOQUE 3: SISTEMAS OPERATIVOS -->
         <section id="bloque3" class="tab-content hidden">
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-2">Bloque 3: Sistemas Operativos y Fundamentos de Windows</h2>
                 <div class="h-1 w-20 bg-indigo-600 rounded"></div>
             </div>
 
+            <!-- Concepto Clave -->
             <div class="bg-slate-900 text-slate-100 rounded-3xl p-6 md:p-8 mb-12 shadow-md">
                 <div class="flex items-center gap-4 mb-4">
                     <span class="bg-indigo-600 p-3 rounded-xl text-white text-xl"><i class="fa-solid fa-desktop"></i></span>
@@ -411,6 +406,7 @@
                 </p>
             </div>
 
+            <!-- Las 6 Funciones Principales (Acordeón) -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 mb-12 shadow-sm">
                 <h3 class="text-2xl font-bold text-slate-900 mb-3 flex items-center gap-2">
                     <i class="fa-solid fa-list-check text-indigo-600"></i> Las 6 Funciones Principales de un Sistema Operativo
@@ -418,6 +414,7 @@
                 <p class="text-slate-500 text-sm mb-6">Los profesores de informática adoran evaluar estas funciones. Haz clic en cada una para ver la explicación:</p>
 
                 <div class="space-y-3">
+                    <!-- Función 1 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('fun1')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span class="flex items-center gap-3"><i class="fa-solid fa-microchip text-indigo-600"></i> Gestión de Procesos</span>
@@ -428,6 +425,7 @@
                         </div>
                     </div>
 
+                    <!-- Función 2 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('fun2')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span class="flex items-center gap-3"><i class="fa-solid fa-memory text-indigo-600"></i> Gestión de Memoria</span>
@@ -438,6 +436,7 @@
                         </div>
                     </div>
 
+                    <!-- Función 3 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('fun3')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span class="flex items-center gap-3"><i class="fa-solid fa-folder-open text-indigo-600"></i> Administración de Archivos</span>
@@ -448,6 +447,7 @@
                         </div>
                     </div>
 
+                    <!-- Función 4 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('fun4')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span class="flex items-center gap-3"><i class="fa-solid fa-gamepad text-indigo-600"></i> Gestión de Periféricos</span>
@@ -458,6 +458,7 @@
                         </div>
                     </div>
 
+                    <!-- Función 5 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('fun5')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span class="flex items-center gap-3"><i class="fa-solid fa-shield-halved text-indigo-600"></i> Manejo de Permisos (Seguridad)</span>
@@ -468,6 +469,7 @@
                         </div>
                     </div>
 
+                    <!-- Función 6 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('fun6')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span class="flex items-center gap-3"><i class="fa-solid fa-wand-magic-sparkles text-indigo-600"></i> Interfaz de Usuario</span>
@@ -480,6 +482,7 @@
                 </div>
             </div>
 
+            <!-- Clasificación de los S.O. (Acordeón) -->
             <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 md:p-8">
                 <h3 class="text-2xl font-bold text-slate-900 mb-3 flex items-center gap-2">
                     <i class="fa-solid fa-network-wired text-indigo-600"></i> Clasificación de los Sistemas Operativos
@@ -487,6 +490,7 @@
                 <p class="text-slate-500 text-sm mb-6">Los sistemas operativos se dividen y agrupan según tres dimensiones básicas. Despliega cada una para estudiarla:</p>
 
                 <div class="space-y-3">
+                    <!-- Dimensión 1 -->
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('clas1')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span><i class="fa-solid fa-users text-indigo-600 mr-2"></i> Por cantidad de usuarios</span>
@@ -500,6 +504,7 @@
                         </div>
                     </div>
 
+                    <!-- Dimensión 2 -->
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('clas2')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span><i class="fa-solid fa-list-check text-indigo-600 mr-2"></i> Por cantidad de tareas</span>
@@ -507,12 +512,13 @@
                         </button>
                         <div id="content-clas2" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-100">
                             <ul class="space-y-2 list-disc list-inside">
-                                <li><strong>Monotarea:</strong> Solo puede procesar una sola tarea a la vez.</li>
-                                <li><strong>Multitarea:</strong> Permite ejecutar múltiples programas al mismo tiempo.</li>
+                                <li><strong>Monotarea:</strong> Solo puede procesar una sola tarea a la vez (si quieres hacer otra cosa, debes cerrar la actual).</li>
+                                <li><strong>Multitarea:</strong> Permite ejecutar múltiples programas al mismo tiempo (ej. navegar por internet mientras escuchas música).</li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Dimensión 3 -->
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('clas3')" class="w-full flex justify-between items-center p-4 font-bold text-left text-indigo-950 focus:outline-none">
                             <span><i class="fa-solid fa-server text-indigo-600 mr-2"></i> Por asignación de recursos</span>
@@ -521,7 +527,7 @@
                         <div id="content-clas3" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-100">
                             <ul class="space-y-2 list-disc list-inside">
                                 <li><strong>Centralizado:</strong> Trabaja utilizando los recursos de una sola computadora física.</li>
-                                <li><strong>Distribuido:</strong> Permite usar y cooridnar los recursos de más de una computadora conectada en red al mismo tiempo.</li>
+                                <li><strong>Distribuido:</strong> Permite usar y coordinar los recursos de más de una computadora conectada en red al mismo tiempo.</li>
                             </ul>
                         </div>
                     </div>
@@ -529,6 +535,7 @@
             </div>
         </section>
 
+        <!-- BLOQUE 4: INTERFAZ Y VENTANAS DE WINDOWS -->
         <section id="bloque4" class="tab-content hidden">
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-2">Bloque 4: Manejo de la Interfaz y Ventanas de Windows</h2>
@@ -536,17 +543,19 @@
             </div>
 
             <p class="text-slate-600 mb-8 max-w-4xl leading-relaxed text-sm md:text-base">
-                Windows utiliza una <strong>Interfaz Gráfica de Usuario (GUI)</strong>. Esto significa que interactúas mediante elementos visuales intuitivos como iconos, botones y menús.
+                Windows utiliza una <strong>Interfaz Gráfica de Usuario (GUI)</strong>. Esto significa que, en lugar de escribir aburridas líneas de comandos de texto, interactúas mediante elementos visuales intuitivos como iconos, botones y menús.
             </p>
 
+            <!-- El Escritorio de Windows e Iconos -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 mb-12 shadow-sm">
                 <h3 class="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <i class="fa-solid fa-desktop text-indigo-600"></i> El Escritorio de Windows e Iconos
                 </h3>
                 <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                    <strong>El Escritorio:</strong> Es el área de pantalla grande que aparece apenas arranca el sistema. Técnicamente, es una carpeta más que se almacena en el sistema de archivos de Windows.
+                    <strong>El Escritorio:</strong> Es el área de pantalla grande que aparece apenas arranca el sistema. Técnicamente, es una carpeta más que se almacena en el sistema de archivos de Windows, y sirve para mantener a la mano tus herramientas de trabajo diarias.
                 </p>
 
+                <!-- Representación de Iconos -->
                 <div class="bg-slate-900 text-white p-6 rounded-2xl text-center mb-8 max-w-2xl mx-auto">
                     <div class="grid grid-cols-2 gap-8 text-xs">
                         <div class="border border-white/10 p-4 rounded-xl">
@@ -588,6 +597,7 @@
                 </div>
             </div>
 
+            <!-- Partes de las Ventanas de Windows (Acordeón) -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 mb-12 shadow-sm">
                 <h3 class="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <i class="fa-solid fa-window-maximize text-indigo-600"></i> Partes de las Ventanas de Windows
@@ -597,65 +607,71 @@
                 </p>
 
                 <div class="space-y-3">
+                    <!-- Parte 1 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('ven1')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span>1. Barra de Título</span>
-                            <span id="icon-ven1" class="text-indigo-600"><i class="fa-solid fa-chevron-up"></i></span>
+                            <span id="icon-ven1" class="text-indigo-600"><i class="fa-solid fa-chevron-down"></i></span>
                         </button>
                         <div id="content-ven1" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-200 space-y-2">
                             <p>Se encuentra en la parte superior. Muestra el nombre del archivo y del programa abierto.</p>
-                            <p><strong>Truco de mouse:</strong> Al hacer doble clic sobre ella, la ventana se maximiza o recupera su tamaño restaurado.</p>
+                            <p><strong>Truco de mouse:</strong> Al hacer doble clic sobre ella, la ventana se maximiza (ocupa toda la pantalla) o recupera su tamaño restaurado. También sirve para arrastrar y mover la ventana por el escritorio haciendo un clic sostenido.</p>
                             <p class="text-xs">Para ver las pautas oficiales de diseño de este componente, consulta el documento de <a href="https://learn.microsoft.com/es-es/windows/apps/design/basics/titlebar-design" target="_blank" class="text-indigo-600 hover:underline font-semibold">Diseño de Barra de Título de Microsoft</a>.</p>
                         </div>
                     </div>
 
+                    <!-- Parte 2 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('ven2')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span>2. Icono de Ventana</span>
-                            <span id="icon-ven2" class="text-indigo-600"><i class="fa-solid fa-chevron-up"></i></span>
+                            <span id="icon-ven2" class="text-indigo-600"><i class="fa-solid fa-chevron-down"></i></span>
                         </button>
                         <div id="content-ven2" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-200">
                             Ubicado en la esquina superior izquierda. Un solo clic abre el menú de control de ventana; un doble clic cierra la ventana de inmediato.
                         </div>
                     </div>
 
+                    <!-- Parte 3 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('ven3')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span>3. Botones de Control (Esquina Superior Derecha)</span>
-                            <span id="icon-ven3" class="text-indigo-600"><i class="fa-solid fa-chevron-up"></i></span>
+                            <span id="icon-ven3" class="text-indigo-600"><i class="fa-solid fa-chevron-down"></i></span>
                         </button>
                         <div id="content-ven3" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-200">
                             Son tres botones estándar para operar de forma manual el recuadro interactivo:
                             <ul class="list-disc list-inside mt-2 space-y-1">
-                                <li><strong>Minimizar (icono -):</strong> Esconde la ventana y la guarda en la barra de tareas.</li>
+                                <li><strong>Minimizar (icono -):</strong> Esconde la ventana y la guarda en la barra de tareas en la parte inferior de la pantalla sin detener su ejecución.</li>
                                 <li><strong>Maximizar / Restaurar (icono ▢):</strong> Agranda la ventana para ocupar todo el monitor, o la devuelve a su tamaño normal.</li>
                                 <li><strong>Cerrar (icono X):</strong> Cierra la aplicación o el documento de forma definitiva.</li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Parte 4 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('ven4')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span>4. Barras de Desplazamiento</span>
-                            <span id="icon-ven4" class="text-indigo-600"><i class="fa-solid fa-chevron-up"></i></span>
+                            <span id="icon-ven4" class="text-indigo-600"><i class="fa-solid fa-chevron-down"></i></span>
                         </button>
                         <div id="content-ven4" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-200">
-                            Se ubican en el borde derecho o inferior cuando la información del documento excede el tamaño físico de la ventana.
+                            Se ubican en el borde derecho o inferior cuando la información del documento excede el tamaño físico de la ventana. Se arrastran con el mouse para navegar por el contenido vertical u horizontalmente.
                         </div>
                     </div>
 
+                    <!-- Parte 5 -->
                     <div class="border border-slate-200 rounded-xl overflow-hidden">
                         <button onclick="toggleAccordion('ven5')" class="w-full flex justify-between items-center p-4 font-bold text-left text-slate-900 bg-slate-50 hover:bg-slate-100/80 focus:outline-none">
                             <span>5. Barra de Estado</span>
-                            <span id="icon-ven5" class="text-indigo-600"><i class="fa-solid fa-chevron-up"></i></span>
+                            <span id="icon-ven5" class="text-indigo-600"><i class="fa-solid fa-chevron-down"></i></span>
                         </button>
                         <div id="content-ven5" class="accordion-content hidden p-4 text-sm text-slate-600 border-t border-slate-200">
-                            Ubicada en la parte inferior de la ventana. Muestra información contextual pasiva (como número de páginas, estado de cargas o rutas).
+                            Ubicada en la parte inferior de la ventana. Muestra información contextual pasiva (como número de páginas, estado de cargas o rutas). No es interactiva mediante doble clic o clic derecho.
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- La Barra de Tareas, el Menú Inicio y la Bandeja -->
             <div class="bg-indigo-950 text-white rounded-3xl p-6 md:p-8">
                 <h3 class="text-2xl font-bold mb-3 flex items-center gap-2">
                     <i class="fa-solid fa-grip-lines text-cyan-400"></i> La Barra de Tareas, el Menú Inicio y la Bandeja
@@ -667,30 +683,36 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-900">
                     <div class="bg-white/95 p-5 rounded-2xl">
                         <h4 class="font-extrabold text-indigo-950 mb-1 text-sm"><i class="fa-solid fa-circle-play text-indigo-600 mr-2"></i> El Menú Inicio</h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Al presionar su botón, se despliega una lista de accesos directos para iniciar todos tus programas instalados.</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">Al presionar su botón (extremo izquierdo), se despliega una lista de accesos directos para iniciar todos tus programas instalados.</p>
                     </div>
                     <div class="bg-white/95 p-5 rounded-2xl">
                         <h4 class="font-extrabold text-indigo-950 mb-1 text-sm"><i class="fa-solid fa-rocket text-indigo-600 mr-2"></i> La Barra de Inicio Rápido / Iconos</h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Muestra iconos de aplicaciones abiertas o fijadas permaneciendo visible de fondo.</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">Ubicada al lado del menú inicio. Muestra iconos de aplicaciones abiertas o fijadas. Es sumamente útil porque permanece visible incluso si tienes otras ventanas encima del escritorio.</p>
                     </div>
                     <div class="bg-white/95 p-5 rounded-2xl">
                         <h4 class="font-extrabold text-indigo-950 mb-1 text-sm"><i class="fa-solid fa-clock text-indigo-600 mr-2"></i> La Bandeja de Sistema (System Tray)</h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Muestra iconos de programas que trabajan de forma silenciosa en segundo plano (antivirus, Wi-Fi, hora).</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">Ubicada a la derecha de la barra de tareas (junto al reloj). Muestra iconos de programas que trabajan de forma silenciosa en segundo plano (antivirus, volumen, conexión Wi-Fi, nivel de batería).</p>
                     </div>
                     <div class="bg-white/95 p-5 rounded-2xl">
                         <h4 class="font-extrabold text-indigo-950 mb-1 text-sm"><i class="fa-solid fa-eye-slash text-indigo-600 mr-2"></i> Botón Mostrar Escritorio</h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">Minimiza inmediatamente todas las ventanas abiertas al hacer clic en el extremo inferior derecho.</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">Un pequeño recuadro al final de la esquina inferior derecha. Al hacer un clic sobre él, minimiza inmediatamente todas las ventanas abiertas para que puedas ver el escritorio al instante.</p>
                     </div>
                 </div>
+
+                <p class="text-[11px] text-slate-400 mt-6 text-center leading-relaxed">
+                    Puedes aprender sobre cómo personalizar esta área en la guía de <a href="https://support.microsoft.com/es-es/windows/personalizar-la-barra-de-tareas-en-windows-0657a50f-0cc7-dbfd-ae6b-05020b195b07" target="_blank" class="text-cyan-400 hover:underline">Soporte de Microsoft</a> o repasar su concepto general en el <a href="https://www.lenovo.com/mx/es/glosario/barra-de-tareas/" target="_blank" class="text-cyan-400 hover:underline">Glosario de Lenovo</a>.
+                </p>
             </div>
         </section>
 
+        <!-- BLOQUE 5: ATAJOS DE TECLADO ESENCIALES -->
         <section id="bloque5" class="tab-content hidden">
             <div class="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
                     <h2 class="text-3xl font-bold text-slate-900 mb-2">Bloque 5: Atajos de Teclado Esenciales</h2>
                     <div class="h-1 w-20 bg-indigo-600 rounded"></div>
                 </div>
+                <!-- Buscador de atajos -->
                 <div class="relative w-full md:w-72">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -699,15 +721,19 @@
                 </div>
             </div>
 
-            <p class="text-slate-500 text-sm mb-6">Filtra los comandos utilizando la barra de búsqueda o revisa el catálogo clasificado a continuación:</p>
+            <p class="text-slate-500 text-sm mb-6">Los atajos de teclado te ahorran horas de tiempo al trabajar o hacer tareas en la escuela. Filtra los comandos utilizando la barra de búsqueda o revisa el catálogo clasificado a continuación:</p>
 
+            <!-- Grilla de Atajos -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="shortcutsContainer">
+                
+                <!-- Edición -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="edicion">
                     <span class="bg-indigo-50 text-indigo-600 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Edición y Manejo de Texto</span>
                     <div class="flex items-center justify-between mt-1">
                         <div class="font-bold text-slate-900">Copiar</div>
                         <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + C</kbd>
                     </div>
+                    <p class="text-slate-500 text-xs mt-3">Copiar la selección al portapapeles de manera temporal.</p>
                 </div>
 
                 <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="edicion">
@@ -716,6 +742,7 @@
                         <div class="font-bold text-slate-900">Cortar</div>
                         <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + X</kbd>
                     </div>
+                    <p class="text-slate-500 text-xs mt-3">Cortar la selección (eliminarla de su sitio original para moverla).</p>
                 </div>
 
                 <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="edicion">
@@ -724,6 +751,7 @@
                         <div class="font-bold text-slate-900">Pegar</div>
                         <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + V</kbd>
                     </div>
+                    <p class="text-slate-500 text-xs mt-3">Pegar lo copiado o cortado en el lugar donde esté tu cursor.</p>
                 </div>
 
                 <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="edicion">
@@ -732,14 +760,53 @@
                         <div class="font-bold text-slate-900">Deshacer</div>
                         <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + Z</kbd>
                     </div>
+                    <p class="text-slate-500 text-xs mt-3">Deshacer la última acción (un verdadero salvavidas cuando cometes un error).</p>
                 </div>
 
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="edicion">
+                    <span class="bg-indigo-50 text-indigo-600 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Edición y Manejo de Texto</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Rehacer</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + Y</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Rehacer la última acción que habías cancelado con deshacer.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="edicion">
+                    <span class="bg-indigo-50 text-indigo-600 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Edición y Manejo de Texto</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Seleccionar Todo</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + A</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Seleccionar todo el texto de un documento o todos los archivos de una carpeta.</p>
+                </div>
+
+                <!-- Navegación -->
                 <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="navegacion">
                     <span class="bg-cyan-50 text-cyan-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Navegación y Control del Sistema</span>
                     <div class="flex items-center justify-between mt-1">
                         <div class="font-bold text-slate-900">Cambiar Ventana</div>
                         <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Alt + Tab</kbd>
                     </div>
+                    <p class="text-slate-500 text-xs mt-3">Cambiar de ventana rápidamente sin usar el mouse.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="navegacion">
+                    <span class="bg-cyan-50 text-cyan-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Navegación y Control del Sistema</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Cerrar Aplicación / Apagar</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Alt + F4</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Cerrar la aplicación activa o apagar el equipo si estás en el escritorio.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="navegacion">
+                    <span class="bg-cyan-50 text-cyan-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Navegación y Control del Sistema</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Minimizar Todo / Mostrar Escritorio</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Win + D</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Minimizar todo para ver el escritorio; al pulsar de nuevo se restaura todo.</p>
                 </div>
 
                 <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="navegacion">
@@ -748,22 +815,122 @@
                         <div class="font-bold text-slate-900">Explorador de Archivos</div>
                         <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Win + E</kbd>
                     </div>
+                    <p class="text-slate-500 text-xs mt-3">Abrir de manera directa el Explorador de Archivos de Windows.</p>
                 </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="navegacion">
+                    <span class="bg-cyan-50 text-cyan-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Navegación y Control del Sistema</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Bloquear Computadora</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Win + L</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Bloquear la sesión de la computadora para proteger tus cosas de miradas curiosas.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="navegacion">
+                    <span class="bg-cyan-50 text-cyan-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Navegación y Control del Sistema</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Administrador de Tareas</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Ctrl + Shift + Esc</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Abrir directamente la consola del Administrador de Tareas.</p>
+                </div>
+
+                <!-- Especiales -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="especiales">
+                    <span class="bg-amber-50 text-amber-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Funciones Especiales Rápidas</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Cambiar de Nombre</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">F2</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Cambiar de nombre un archivo o carpeta seleccionado de inmediato.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="especiales">
+                    <span class="bg-amber-50 text-amber-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Funciones Especiales Rápidas</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Actualizar / Recargar</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">F5</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Actualizar / Recargar la pantalla activa o la página web abierta.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm shortcut-card" data-category="especiales">
+                    <span class="bg-amber-50 text-amber-700 text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full mb-3 inline-block">Funciones Especiales Rápidas</span>
+                    <div class="flex items-center justify-between mt-1">
+                        <div class="font-bold text-slate-900">Eliminar Permanente</div>
+                        <kbd class="bg-slate-100 border border-slate-300 text-slate-800 text-xs px-2.5 py-1 rounded shadow-sm">Shift + Supr</kbd>
+                    </div>
+                    <p class="text-slate-500 text-xs mt-3">Eliminar permanentemente un archivo seleccionado sin mandarlo a la Papelera de Reciclaje.</p>
+                </div>
+
             </div>
+
+            <!-- Enlace oficial -->
+            <p class="text-xs text-slate-400 mt-8 text-center leading-relaxed">
+                Para explorar la lista oficial completa de combinaciones de teclas de Windows, puedes acceder al <a href="https://support.microsoft.com/es-es/windows/m%C3%A9todos-abreviados-de-teclado-de-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" class="text-indigo-600 hover:underline">Soporte de Atajos de Windows</a>. Para trucos adicionales, revisa las guías de <a href="https://www.ma-no.org/es/20-atajos-de-teclado-esenciales-de-windows" target="_blank" class="text-indigo-600 hover:underline">Ma-no</a> o <a href="https://www.xataka.com/basics/estos-son-los-mejores-gestos-y-atajos-de-teclado-para-windows-10" target="_blank" class="text-indigo-600 hover:underline">Xataka</a>.
+            </p>
         </section>
 
+        <!-- SECCIÓN: FUENTES Y ENLACES DE REFERENCIA -->
         <section id="fuentes" class="tab-content hidden">
             <div class="mb-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-2">🔗 Fuentes y Enlaces de Referencia</h2>
+                <p class="text-slate-500 text-sm">Si deseas profundizar en cada uno de los temas y verificar las fuentes originales, puedes acceder de manera directa:</p>
                 <div class="h-1 w-20 bg-indigo-600 rounded mt-2"></div>
             </div>
 
             <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm space-y-6">
+                <!-- Categoria 1 -->
                 <div>
                     <h4 class="font-bold text-indigo-950 text-base mb-2 border-b pb-1"><i class="fa-solid fa-code text-indigo-600 mr-2"></i> Fundamentos del Software</h4>
                     <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
                         <li><a href="https://www.lenovo.com/mx/es/glosario/que-es-software/" target="_blank" class="text-indigo-600 hover:underline">Lenovo Glosario: ¿Qué es el Software?</a></li>
                         <li><a href="https://www.ceupe.com/blog/que-es-el-software-y-como-se-clasifica.html" target="_blank" class="text-indigo-600 hover:underline">Ceupe: ¿Qué es el software y cómo se clasifica?</a></li>
+                        <li><a href="https://www.godaddy.com/resources/latam/desarrollo/ejemplos-software-aplicaciones-herramientas" target="_blank" class="text-indigo-600 hover:underline">GoDaddy: Ejemplos de software de aplicación y herramientas</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/Software" target="_blank" class="text-indigo-600 hover:underline">Wikipedia: Software y su conceptualización técnica</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categoria 2 -->
+                <div>
+                    <h4 class="font-bold text-indigo-950 text-base mb-2 border-b pb-1"><i class="fa-solid fa-briefcase text-indigo-600 mr-2"></i> Suites de Ofimática</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li><a href="https://wiki.documentfoundation.org/Feature_Comparison:LibreOffice-_Microsoft_Office/es" target="_blank" class="text-indigo-600 hover:underline">Document Foundation Wiki: Feature Comparison LibreOffice vs MS Office</a></li>
+                        <li><a href="https://www.profesionalreview.com/2025/06/29/microsoft-office-vs-libreoffice/" target="_blank" class="text-indigo-600 hover:underline">Profesional Review: Análisis comparativo integral</a></li>
+                        <li><a href="https://badgerlayer.com/blog/microsoft-365-vs-google-workspace/" target="_blank" class="text-indigo-600 hover:underline">Badgerlayer: Comparativa Google Workspace vs Microsoft 365</a></li>
+                        <li><a href="https://www.ciotech.us/microsoft-365-vs-google-workspace-better-decision-2026/" target="_blank" class="text-indigo-600 hover:underline">CIOTech: Microsoft 365 vs Google Workspace para toma de decisiones</a></li>
+                        <li><a href="https://www.reddit.com/r/libreoffice/comments/1r5pnwj/libreoffice_v_ms_office/?tl=es-419" target="_blank" class="text-indigo-600 hover:underline">Reddit Discussion: Debates reales de usuarios sobre suites ofimáticas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categoria 3 -->
+                <div>
+                    <h4 class="font-bold text-indigo-950 text-base mb-2 border-b pb-1"><i class="fa-solid fa-desktop text-indigo-600 mr-2"></i> Sistemas Operativos</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li><a href="https://concepto.de/sistema-operativo/" target="_blank" class="text-indigo-600 hover:underline">Concepto.de: Sistemas Operativos (Definición y Funciones)</a></li>
+                        <li><a href="https://www.godaddy.com/resources/es/digitalizacion/sistema-operativo-que-es" target="_blank" class="text-indigo-600 hover:underline">GoDaddy: Qué es un sistema operativo y cómo elegir el adecuado</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categoria 4 -->
+                <div>
+                    <h4 class="font-bold text-indigo-950 text-base mb-2 border-b pb-1"><i class="fa-solid fa-window-restore text-indigo-600 mr-2"></i> Interfaz de Windows</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li><a href="https://1214119.sites.myregisteredsite.com/lessons-sp/win/basics/interface-allparts.htm" target="_blank" class="text-indigo-600 hover:underline">MyRegisteredSite Lesson: Interfaz de Windows y sus componentes</a></li>
+                        <li><a href="https://www.lenovo.com/mx/es/glosario/barra-de-tareas/" target="_blank" class="text-indigo-600 hover:underline">Lenovo Glosario: ¿Qué es la Barra de Tareas?</a></li>
+                        <li><a href="https://support.microsoft.com/es-es/windows/personalizar-la-barra-de-tareas-en-windows-0657a50f-0cc7-dbfd-ae6b-05020b195b07" target="_blank" class="text-indigo-600 hover:underline">Microsoft Support: Personalizar la barra de tareas en Windows</a></li>
+                        <li><a href="https://learn.microsoft.com/es-es/windows/apps/design/basics/titlebar-design" target="_blank" class="text-indigo-600 hover:underline">Microsoft Learn: Titlebar Design Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categoria 5 -->
+                <div>
+                    <h4 class="font-bold text-indigo-950 text-base mb-2 border-b pb-1"><i class="fa-solid fa-keyboard text-indigo-600 mr-2"></i> Atajos de Teclado</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                        <li><a href="https://support.microsoft.com/es-es/windows/m%C3%A9todos-abreviados-de-teclado-de-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" class="text-indigo-600 hover:underline">Microsoft Support: Métodos abreviados de teclado completos</a></li>
+                        <li><a href="https://www.ma-no.org/es/20-atajos-de-teclado-esenciales-de-windows" target="_blank" class="text-indigo-600 hover:underline">Ma-no: 20 Atajos de teclado esenciales de Windows</a></li>
+                        <li><a href="https://www.xataka.com/basics/estos-son-los-mejores-gestos-y-atajos-de-teclado-para-windows-10" target="_blank" class="text-indigo-600 hover:underline">Xataka Basics: Los mejores gestos y atajos para Windows</a></li>
                     </ul>
                 </div>
             </div>
@@ -771,45 +938,53 @@
 
     </main>
 
-   
-    <<footer class="bg-slate-900 text-slate-400 py-8 mt-16 px-6 border-t border-slate-800 text-xs">
+        <!-- Footer -->
+    <    <footer class="bg-slate-900 text-slate-400 py-8 mt-16 px-6 border-t border-slate-800 text-xs">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
                 <p class="font-semibold text-slate-300 text-sm">Software, Ofimática y Sistemas Operativos</p>
                 <p class="mt-1 text-slate-500">© 2026 Todos los derechos reservados.</p>
             </div>
-            <div class="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-4 text-slate-400">
+            <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-slate-400">
                 <span>Diseñado por Lic. Marcelo Morini</span>
                 <span class="text-slate-700 hidden md:block">|</span>
                 <a href="mailto:morinimarcelo1976@gmail.com" class="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                     <i class="fa-regular fa-envelope"></i> morinimarcelo1976@gmail.com
                 </a>
             </div>
-        </div> 
+        </div>
     </footer>
 
+    <!-- Lógica de Control Dinámico con JavaScript -->
     <script>
+        // Función de alternancia de pestañas
         function switchTab(tabId) {
+            // Ocultar todas las pestañas
             document.querySelectorAll('.tab-content').forEach(tab => {
                 tab.classList.add('hidden');
                 tab.classList.remove('block');
             });
+            // Ocultar estado activo de todos los botones
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('tab-active');
             });
 
+            // Mostrar la pestaña indicada
             const targetTab = document.getElementById(tabId);
             if (targetTab) {
                 targetTab.classList.remove('hidden');
                 targetTab.classList.add('block');
             }
+            // Activar el botón de la pestaña correspondiente
             const targetBtn = document.getElementById('btn-' + tabId);
             if (targetBtn) {
                 targetBtn.classList.add('tab-active');
             }
+            // Desplazar al área del menú
             window.scrollTo({ top: 300, behavior: 'smooth' });
         }
 
+        // Función del Acordeón Desplegable (Toggle)
         function toggleAccordion(id) {
             const content = document.getElementById('content-' + id);
             const icon = document.getElementById('icon-' + id);
@@ -823,6 +998,7 @@
             }
         }
 
+        // Filtro dinámico de atajos
         function filterShortcuts() {
             const query = document.getElementById('shortcutSearch').value.toLowerCase();
             document.querySelectorAll('.shortcut-card').forEach(card => {
